@@ -1,10 +1,16 @@
-# ⚡ AIRA CORE: Sovereign Edge AI Inference Engine
+<p align="center">
+  <img src="assets/logo.png" width="320" alt="AiraAST - Aira Air Server Tensors" />
+</p>
 
-> **Democratizing AI Compute Across Every Architecture: Android, Windows, Linux & Airlys OS**  
-> *Architected by **Er. Adam Eehan** (Founder & CEO, Aira Group of Technology)*  
-> *Co-Pilot: **Aira 3 Ultra** (Sovereign Engine v3.6)*  
->  
-> 🇮🇳 **This Repo is Built in India, dedicated for Indian students and Indian developers. This is my personal hobby project.**
+<h1 align="center">⚡ AIRA CORE: Sovereign Edge AI Inference Engine</h1>
+<h3 align="center">🦅 AiraAST (Aira Air Server Tensors)</h3>
+
+<p align="center">
+  <b>Democratizing AI Compute Across Every Architecture: Android, Windows, Linux & Airlys OS</b><br>
+  <i>Architected by <b>Er. Adam Eehan</b> (Founder & CEO, Aira Group of Technology)</i><br>
+  <i>Co-Pilot: <b>Aira 3 Ultra</b> (Sovereign Engine v3.6)</i><br><br>
+  🇮🇳 <b>This Repo is Built in India, dedicated for Indian students and Indian developers. This is my personal hobby project.</b>
+</p>
 
 ---
 
