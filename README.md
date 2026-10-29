@@ -106,7 +106,68 @@ make airlys
 
 ---
 
-## 📊 5. Mathematical Precision & Invariants
+## 📖 5. Step-by-Step Beginner's Guide: Running AI on Low-End Hardware
+
+This guide is written specifically for Indian students and independent developers who want to run AI locally without spending money on high-end graphics cards or cloud subscriptions.
+
+### Step 1: Install Basic Compilers (1 minute)
+- **On Android (Termux):**
+  ```bash
+  pkg update && pkg install -y git clang make wget
+  ```
+- **On Ubuntu / Debian / Raspberry Pi:**
+  ```bash
+  sudo apt update && sudo apt install -y git build-essential clang wget
+  ```
+- **On Windows (PowerShell / Command Prompt):**
+  Install MinGW-w64 (via MSYS2 or `winget install MSYS2`) or Visual Studio C++.
+
+### Step 2: Clone and Compile
+```bash
+# Clone repository
+git clone https://github.com/airagroupoftechnology/aira-core.git
+cd aira-core
+
+# Compile native binary (takes ~5 seconds)
+make
+
+# Verify that mathematical tensor engine passes all checks
+make test
+```
+
+### Step 3: Download a Lightweight Model (Offline Inference)
+To get started immediately without downloading gigabytes of data, you can use an educational micro-model (like Stories15M - ~60 MB):
+```bash
+# Download weights
+wget https://huggingface.co/karpathy/tinyllamas/resolve/main/stories15M.bin -O model.bin
+
+# Download tokenizer vocabulary
+wget https://raw.githubusercontent.com/karpathy/llama2.c/master/tokenizer.bin -O tokenizer.bin
+```
+
+### Step 4: Run Real AI Inference (100% Offline, Zero Internet)
+```bash
+./aira-core -m model.bin -z tokenizer.bin -p "Once upon a time in India" -t 0.8 -s 256
+```
+
+### CLI Command Reference
+| Flag | Description | Example |
+| :--- | :--- | :--- |
+| `-m` | Path to binary model weights | `-m model.bin` |
+| `-z` | Path to tokenizer vocabulary | `-z tokenizer.bin` |
+| `-p` | Prompt string to initialize generation | `-p "Hello Aira"` |
+| `-t` | Temperature (`0.0` = greedy, `0.8` = creative) | `-t 0.7` |
+| `-s` | Maximum sequence generation steps (tokens) | `-s 256` |
+
+### Step 5: Exporting Custom Hugging Face Models
+To convert your own PyTorch / Hugging Face models into the zero-copy Aira binary format:
+```bash
+python3 tools/export_weights.py
+```
+
+---
+
+## 📊 6. Mathematical Precision & Invariants
 
 All core mathematical routines are verified through `tests/test_math.c`:
 - **Root Mean Square Normalization (RMSNorm)**: Numerical epsilon stability at $10^{-5}$.
@@ -117,7 +178,7 @@ All core mathematical routines are verified through `tests/test_math.c`:
 
 ---
 
-## 📜 6. Sovereign Mission & Dedication
+## 📜 7. Sovereign Mission & Dedication
 
 **🇮🇳 Built in India for Indian Students and Indian Developers**
 
