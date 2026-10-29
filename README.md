@@ -2,7 +2,9 @@
 
 > **Democratizing AI Compute Across Every Architecture: Android, Windows, Linux & Airlys OS**  
 > *Architected by **Er. Adam Eehan** (Founder & CEO, Aira Group of Technology)*  
-> *Co-Pilot: **Aira 3 Ultra** (Sovereign Engine v3.6)*
+> *Co-Pilot: **Aira 3 Ultra** (Sovereign Engine v3.6)*  
+>  
+> 🇮🇳 **This Repo is Built in India, dedicated for Indian students and Indian developers. This is my personal hobby project.**
 
 ---
 
@@ -115,7 +117,12 @@ All core mathematical routines are verified through `tests/test_math.c`:
 
 ---
 
-## 📜 6. Sovereign License & Philosophy
+## 📜 6. Sovereign Mission & Dedication
 
-Created and Maintained by **Aira Group of Technology**.  
-This project is dedicated to the global open-source community—ensuring that every developer, student, and researcher can run modern artificial intelligence on any device, anywhere on earth, independent of corporate monopolies.
+**🇮🇳 Built in India for Indian Students and Indian Developers**
+
+This is a personal hobby project architected by **Er. Adam Eehan** (**Founder & CEO, Aira Group of Technology**).
+
+It is dedicated to Indian students, budding developers, and researchers across the country and the world who have the passion to build, learn, and experiment with artificial intelligence, but lack access to expensive high-end GPUs or costly cloud infrastructure. 
+
+With **Aira Core**, any standard laptop, phone, or bare-metal environment becomes an independent, sovereign machine capable of running modern neural inference at native speeds. Zero corporate gatekeeping, zero subscription fees—pure engineering freedom.
