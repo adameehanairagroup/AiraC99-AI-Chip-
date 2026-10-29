@@ -1,0 +1,7 @@
+*.o
+*.exe
+test_math
+aira-core
+build/
+.DS_Store
+*.bin
